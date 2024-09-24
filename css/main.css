@@ -1,0 +1,39 @@
+
+.bgImg{
+
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  height: 100vh;
+  flex: 0.1;
+  transition: 2s;
+  border-radius: 20px;  
+  cursor: pointer;
+}
+.active{
+flex: 3;
+
+}
+.position{
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  opacity: 0;
+  color: rgb(116, 57, 57);
+  font-weight: bold;
+}
+.imgFull .active p{
+  font-size: 30px;
+  transition:  2s;
+  animation-duration: 2s ;
+  animation-delay: 1s ;
+  animation:  sli 2s forwards  1s ;
+}
+@keyframes sli {
+  
+  100%{
+      right: 50%;
+      opacity: 1;
+  }
+
+}
